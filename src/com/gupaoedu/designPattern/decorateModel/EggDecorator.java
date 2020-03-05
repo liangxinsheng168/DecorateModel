@@ -7,8 +7,8 @@ package com.gupaoedu.designPattern.decorateModel;
  */
 public class EggDecorator extends CakeDecorater {
 
-    public EggDecorator(BaseCake baseCake) {
-        super(baseCake);
+    public EggDecorator(Cake cake) {
+        super(cake);
     }
 
     @Override

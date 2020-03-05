@@ -7,10 +7,10 @@ package com.gupaoedu.designPattern.decorateModel;
  */
 public class DecorateModelTest {
     public static void main(String[] args) {
-        BaseCake baseCake = new BaseCake();
-        baseCake = new EggDecorator(baseCake);
-        baseCake = new EggDecorator(baseCake);
-        baseCake = new SausageDecorater(baseCake);
-        System.out.println(baseCake.getCakeName() + ": " + baseCake.getCakePrice());
+        Cake cake = new BaseCake();
+        cake = new EggDecorator(cake);
+        cake = new EggDecorator(cake);
+        cake = new SausageDecorater(cake);
+        System.out.println(cake.getCakeName() + ": " + cake.getCakePrice());
     }
 }
